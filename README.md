@@ -1,3 +1,6 @@
+![test](https://github.com/bradleyburgess/neetcode-blind75/actions/workflows/test.yml/badge.svg)
+
+
 # NeetCode Blind 75 Solutions
 
 This repository contains my solutions to the [NeetCode Blind
