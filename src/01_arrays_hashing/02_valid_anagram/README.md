@@ -3,7 +3,7 @@
 > Given two strings, determine if they are anagrams of each other.
 
 [View on NeetCode](https://neetcode.io/problems/is-anagram/)  
-[View on LeedCode](https://leetcode.com/problems/valid-anagram/description/)
+[View on LeetCode](https://leetcode.com/problems/valid-anagram/description/)
 
 ---
 
