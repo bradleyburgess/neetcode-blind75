@@ -55,3 +55,13 @@ This will discover and run all `*_test.py` files under `src/`.
 
 Feel free to follow along or use these as reference solutions. Feedback and
 suggestions welcome!
+
+---
+
+## The Problems
+
+- [01. Arrays & Hashing](./src/01_arrays_hashing/)
+  - [Contains Duplicate](./src/01_arrays_hashing/01_contains_duplicate/README.md)
+  - [Valid Anagram](./src/01_arrays_hashing/02_valid_anagram/README.md)
+  - [Two Sum](./src/01_arrays_hashing/03_two_sum/README.md)
+  - [Group Anagrams](./src/01_arrays_hashing/04_group_anagrams/README.md)
