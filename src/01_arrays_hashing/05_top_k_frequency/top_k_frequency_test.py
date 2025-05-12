@@ -1,9 +1,5 @@
 import pytest
-from top_k_frequency import (
-    top_k_frequency_hashmap,
-    top_k_frequency_heapq,
-    top_k_frequency_buckets,
-)
+from top_k_frequency import Solution
 
 
 def normalize(result):
@@ -54,9 +50,9 @@ test_cases = [
 ]
 
 methods = [
-    ("hashmap", top_k_frequency_hashmap),
-    ("heapq", top_k_frequency_heapq),
-    ("buckets", top_k_frequency_buckets),
+    ("hashmap", Solution.top_k_frequency_hashmap),
+    ("heapq", Solution.top_k_frequency_heapq),
+    ("buckets", Solution.top_k_frequency_buckets),
 ]
 
 

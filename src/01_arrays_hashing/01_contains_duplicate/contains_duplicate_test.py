@@ -1,9 +1,5 @@
 import pytest
-from contains_duplicate import (
-    contains_duplicate_brute,
-    contains_duplicate_hashmap,
-    contains_duplicate_sorted,
-)
+from contains_duplicate import Solution
 
 
 test_cases = [
@@ -17,9 +13,9 @@ test_cases = [
 
 # List of implementations to test
 methods = [
-    ("brute", contains_duplicate_brute),
-    ("hashmap", contains_duplicate_hashmap),
-    ("sorted", contains_duplicate_sorted),
+    ("brute", Solution.contains_duplicate_brute),
+    ("hashmap", Solution.contains_duplicate_hashmap),
+    ("sorted", Solution.contains_duplicate_sorted),
 ]
 
 

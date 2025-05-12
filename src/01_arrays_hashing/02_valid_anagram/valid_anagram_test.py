@@ -1,9 +1,5 @@
 import pytest
-from valid_anagram import (
-    is_anagram_hashmap,
-    is_anagram_hashmap_optimized,
-    is_anagram_sorted,
-)
+from valid_anagram import Solution
 
 test_cases = [
     (("racecar", "carrace"), True),
@@ -20,9 +16,9 @@ test_cases = [
 ]
 
 methods = [
-    ("hashmap", is_anagram_hashmap),
-    ("hashmap_optimized", is_anagram_hashmap_optimized),
-    ("sorted", is_anagram_sorted),
+    ("hashmap", Solution.is_anagram_hashmap),
+    ("hashmap_optimized", Solution.is_anagram_hashmap_optimized),
+    ("sorted", Solution.is_anagram_sorted),
 ]
 
 

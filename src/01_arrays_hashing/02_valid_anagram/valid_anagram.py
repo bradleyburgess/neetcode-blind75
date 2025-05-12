@@ -36,36 +36,38 @@ def update_letter(hash: dict, letter: str, mode: UpdateMode):
 """
 
 
-def is_anagram_hashmap(s1: str, s2: str) -> bool:
-    hash1 = dict()
-    hash2 = dict()
-    s1 = strip_punctuation(s1)
-    s2 = strip_punctuation(s2)
-    for letter in s1:
-        increment_letter(hash1, letter)
-    for letter in s2:
-        increment_letter(hash2, letter)
-    return hash1 == hash2
+class Solution:
+    @staticmethod
+    def is_anagram_hashmap(s1: str, s2: str) -> bool:
+        hash1 = dict()
+        hash2 = dict()
+        s1 = strip_punctuation(s1)
+        s2 = strip_punctuation(s2)
+        for letter in s1:
+            increment_letter(hash1, letter)
+        for letter in s2:
+            increment_letter(hash2, letter)
+        return hash1 == hash2
 
+    @staticmethod
+    def is_anagram_hashmap_optimized(s1: str, s2: str) -> bool:
 
-def is_anagram_hashmap_optimized(s1: str, s2: str) -> bool:
+        s1 = strip_punctuation(s1)
+        s2 = strip_punctuation(s2)
+        hash = dict()
+        for letter in s1:
+            update_letter(hash, letter, UpdateMode.INCREMENT)
+        for letter in s2:
+            update_letter(hash, letter, UpdateMode.DECREMENT)
+        for letter in hash:
+            if hash[letter] != 0:
+                return False
+        return True
 
-    s1 = strip_punctuation(s1)
-    s2 = strip_punctuation(s2)
-    hash = dict()
-    for letter in s1:
-        update_letter(hash, letter, UpdateMode.INCREMENT)
-    for letter in s2:
-        update_letter(hash, letter, UpdateMode.DECREMENT)
-    for letter in hash:
-        if hash[letter] != 0:
-            return False
-    return True
-
-
-def is_anagram_sorted(s1: str, s2: str) -> bool:
-    s1 = strip_punctuation(s1)
-    s2 = strip_punctuation(s2)
-    sorted1 = "".join(sorted(s1))
-    sorted2 = "".join(sorted(s2))
-    return sorted1 == sorted2
+    @staticmethod
+    def is_anagram_sorted(s1: str, s2: str) -> bool:
+        s1 = strip_punctuation(s1)
+        s2 = strip_punctuation(s2)
+        sorted1 = "".join(sorted(s1))
+        sorted2 = "".join(sorted(s2))
+        return sorted1 == sorted2

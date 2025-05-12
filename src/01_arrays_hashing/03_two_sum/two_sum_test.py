@@ -1,5 +1,5 @@
 import pytest
-from two_sum import two_sum_brute, two_sum_hashmap, two_sum_hashmap_one_pass
+from two_sum import Solution
 
 test_cases = [
     (([2, 7, 11, 15], 9), [0, 1]),
@@ -22,9 +22,9 @@ test_cases = [
 
 
 methods = [
-    ("brute", two_sum_brute),
-    ("hashmap", two_sum_hashmap),
-    ("hashmap_one_pass", two_sum_hashmap_one_pass),
+    ("brute", Solution.two_sum_brute),
+    ("hashmap", Solution.two_sum_hashmap),
+    ("hashmap_one_pass", Solution.two_sum_hashmap_one_pass),
 ]
 
 

@@ -66,3 +66,4 @@ suggestions welcome!
   - [Two Sum](./src/01_arrays_hashing/03_two_sum/)
   - [Group Anagrams](./src/01_arrays_hashing/04_group_anagrams/)
   - [Top K Frequency](./src/01_arrays_hashing/05_top_k_frequency/)
+  - [String Encode & Decode](./src/01_arrays_hashing/06_string_encode_decode/)

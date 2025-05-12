@@ -1,8 +1,5 @@
 import pytest
-from group_anagrams import (
-    group_anagrams_sorted,
-    group_anagrams_char_count,
-)
+from group_anagrams import Solution
 
 
 # Helper to normalize output (sort groups and contents)
@@ -27,8 +24,8 @@ test_cases = [
 ]
 
 methods = [
-    ("sorted", group_anagrams_sorted),
-    ("char_count", group_anagrams_char_count),
+    ("sorted", Solution.group_anagrams_sorted),
+    ("char_count", Solution.group_anagrams_char_count),
 ]
 
 
