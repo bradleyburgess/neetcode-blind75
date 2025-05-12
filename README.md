@@ -67,3 +67,4 @@ suggestions welcome!
   - [Group Anagrams](./src/01_arrays_hashing/04_group_anagrams/)
   - [Top K Frequency](./src/01_arrays_hashing/05_top_k_frequency/)
   - [String Encode & Decode](./src/01_arrays_hashing/06_string_encode_decode/)
+  - [Product Except Self](./src/01_arrays_hashing/07_array_product_except_self/)
