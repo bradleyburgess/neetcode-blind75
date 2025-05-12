@@ -17,9 +17,11 @@ test_cases = [
     (".,", True),
     ("Able was I ere I saw Elba", True),
     ("Madam In Eden, I’m Adam", True),
-    ("1231", True),
     ("Red rum, sir, is murder", True),
     ("Eva, can I see bees in a cave?", True),
+    ("12321", True),
+    ("1231", False),
+    ("0P", False),
 ]
 
 
