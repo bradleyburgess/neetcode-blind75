@@ -17,10 +17,7 @@ test_cases = [
     [],
 ]
 
-methods = [
-    ("json", Solution.Json),
-    ("length_delimited", Solution.LengthDelimited)
-]
+methods = [("json", Solution.Json), ("length_delimited", Solution.LengthDelimited)]
 
 
 @pytest.mark.parametrize("name,sln", methods)

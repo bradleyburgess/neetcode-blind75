@@ -68,3 +68,6 @@ suggestions welcome!
   - [Top K Frequency](./src/01_arrays_hashing/05_top_k_frequency/)
   - [String Encode & Decode](./src/01_arrays_hashing/06_string_encode_decode/)
   - [Product Except Self](./src/01_arrays_hashing/07_array_product_except_self/)
+  - [Longest Consecutive Sequence](./src/01_arrays_hashing/08_longest_consecutive_sequence/)
+- [02. Two Pointers](./src/02_two_pointers/)
+  - [Valid Palindrome](./src/02_two_pointers/08_longest_consecutive_sequence/)

@@ -1,5 +1,6 @@
 from collections import defaultdict
 
+
 class Solution:
     @staticmethod
     def group_anagrams_sorted(words: list[str]) -> list[list[str]]:
