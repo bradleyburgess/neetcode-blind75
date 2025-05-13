@@ -71,3 +71,4 @@ suggestions welcome!
   - [Longest Consecutive Sequence](./src/01_arrays_hashing/08_longest_consecutive_sequence/)
 - [02. Two Pointers](./src/02_two_pointers/)
   - [Valid Palindrome](./src/02_two_pointers/08_longest_consecutive_sequence/)
+  - [Three Sum](./src/02_two_pointers/10_three_sum/)
