@@ -11,7 +11,7 @@ class Solution:
                 area = min(heights[left], heights[right]) * (right - left)
                 max_area = max(area, max_area)
         return max_area
-    
+
     @staticmethod
     def container_most_water_two_pointer(heights: List[int]) -> List[List[int]]:
         n = len(heights)
