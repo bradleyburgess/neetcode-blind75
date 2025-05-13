@@ -4,11 +4,11 @@ skip-string-normalization = false
 target-version = ['py311']
 
 [tool.pytest.ini_options]
-addopts = "-ra -q"
+addopts = "-ra -q --import-mode=importlib"
 minversion = "7.0"
-testpaths = [
-  "src",
-]
+pythonpath = ["."]
+testpaths = ["src"]
+python_files = ["test.py"]
 
 [tool.ruff]
 exclude = ["venv", "__pycache__"]

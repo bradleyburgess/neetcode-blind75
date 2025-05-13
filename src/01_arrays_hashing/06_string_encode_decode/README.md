@@ -98,4 +98,4 @@ To decode:
 
 ## 🧮 Code
 
-> See [`string_encode_decode.py`](./string_encode_decode.py)
+> See [`solution.py`](./solution.py) and [`test.py`](./test.py)

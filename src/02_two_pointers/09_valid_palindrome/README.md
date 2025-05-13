@@ -89,4 +89,4 @@ while traversing, and compare lowercase letters on the fly.
 
 ## 🧮 Code
 
-> See [`valid_palindrome.py`](./valid_palindrome.py)
+> See [`solution.py`](./solution.py) and [`test.py`](./test.py)

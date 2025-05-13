@@ -117,4 +117,4 @@ worth noting.
 
 ## 🧮 Code
 
-> See [`array_product_except_self.py`](./array_product_except_self.py)
+> See [`solution.py`](./solution.py) and [`test.py`](./test.py)

@@ -1,5 +1,5 @@
 import pytest
-from array_product_except_self import Solution
+from .solution import Solution
 
 
 def normalize(result):

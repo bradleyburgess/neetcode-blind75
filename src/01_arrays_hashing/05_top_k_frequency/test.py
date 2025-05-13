@@ -1,5 +1,5 @@
 import pytest
-from top_k_frequency import Solution
+from .solution import Solution
 
 
 def normalize(result):

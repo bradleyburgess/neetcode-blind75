@@ -84,4 +84,4 @@ key that has the characated count for each letter in the word.
 
 ## 🧮 Code
 
-> See [`group_anagrams.py`](./group_anagrams.py)
+> See [`solution.py`](./solution.py) and [`test.py`](./test.py)

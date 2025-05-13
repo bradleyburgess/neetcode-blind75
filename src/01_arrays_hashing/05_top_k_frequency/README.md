@@ -105,4 +105,4 @@ represents the frequency. Traverse the buckets in reverse to gather the top `k`.
 
 ## 🧮 Code
 
-> See [`top_k_frequency.py`](./top_k_frequency.py)
+> See [`solution.py`](./solution.py) and [`test.py`](./test.py)

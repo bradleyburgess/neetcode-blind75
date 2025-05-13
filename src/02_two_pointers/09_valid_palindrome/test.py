@@ -1,5 +1,5 @@
 import pytest
-from valid_palindrome import Solution
+from .solution import Solution
 
 
 def normalize(result):

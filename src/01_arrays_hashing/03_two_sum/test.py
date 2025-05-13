@@ -1,5 +1,5 @@
 import pytest
-from two_sum import Solution
+from .solution import Solution
 
 test_cases = [
     (([2, 7, 11, 15], 9), [0, 1]),

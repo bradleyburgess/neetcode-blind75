@@ -83,4 +83,4 @@ start, see how far up you can go.
 
 ## 🧮 Code
 
-> See [`longest_consecutive_sequence.py`](./longest_consecutive_sequence.py)
+> See [`solution.py`](./solution.py) and [`test.py`](./test.py)

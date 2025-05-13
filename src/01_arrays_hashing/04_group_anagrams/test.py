@@ -1,5 +1,5 @@
 import pytest
-from group_anagrams import Solution
+from .solution import Solution
 
 
 # Helper to normalize output (sort groups and contents)

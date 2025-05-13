@@ -1,5 +1,5 @@
 import pytest
-from string_encode_decode import Solution
+from .solution import Solution
 
 
 test_cases = [

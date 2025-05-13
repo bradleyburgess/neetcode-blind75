@@ -78,4 +78,4 @@ Edge cases include:
 
 ## 🧮 Code
 
-> See [`contains_duplicate.py`](./contains_duplicate.py)
+> See [`solution.py`](./solution.py) and [`test.py`](./test.py)

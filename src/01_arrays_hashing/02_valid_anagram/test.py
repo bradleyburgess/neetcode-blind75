@@ -1,5 +1,5 @@
 import pytest
-from valid_anagram import Solution
+from .solution import Solution
 
 test_cases = [
     (("racecar", "carrace"), True),

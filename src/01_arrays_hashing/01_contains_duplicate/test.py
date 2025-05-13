@@ -1,5 +1,5 @@
 import pytest
-from contains_duplicate import Solution
+from .solution import Solution
 
 
 test_cases = [

@@ -1,5 +1,5 @@
 import pytest
-from longest_consecutive_sequence import Solution
+from .solution import Solution
 
 
 def normalize(result):

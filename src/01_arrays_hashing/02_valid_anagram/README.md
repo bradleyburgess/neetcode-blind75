@@ -85,4 +85,4 @@ Sort both strings and compare them.
 
 ## 🧮 Code
 
-> See [`valid_anagram.py`](./valid_anagram.py)
+> See [`solution.py`](./solution.py) and [`test.py`](./test.py)

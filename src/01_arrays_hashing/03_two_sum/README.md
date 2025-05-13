@@ -77,4 +77,4 @@ pass. Basically: get the complement required; if it's in the hashmap, return it
 
 ## 🧮 Code
 
-> See [`two_sum.py`](./two_sum.py)
+> See [`solution.py`](./solution.py) and [`test.py`](./test.py)
