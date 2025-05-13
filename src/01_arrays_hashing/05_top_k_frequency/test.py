@@ -58,7 +58,7 @@ methods = [
 
 @pytest.mark.parametrize("name,fn", methods)
 @pytest.mark.parametrize("nums,k,expected", test_cases)
-def test_top_k_frequency(name, fn, nums, k, expected):
+def test_solutions(name, fn, nums, k, expected):
     result = fn(nums, k)
     assert sorted(result) == sorted(
         expected

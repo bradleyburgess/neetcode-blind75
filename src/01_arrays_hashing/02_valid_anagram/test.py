@@ -24,5 +24,5 @@ methods = [
 
 @pytest.mark.parametrize("name,fn", methods)
 @pytest.mark.parametrize("args,expected", test_cases)
-def test_valid_anagram_solutions(name, fn, args, expected):
+def test_solutions(name, fn, args, expected):
     assert fn(*args) == expected, f"{name} failed for input {args}"

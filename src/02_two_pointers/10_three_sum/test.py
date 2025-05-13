@@ -40,6 +40,6 @@ methods = [
 
 @pytest.mark.parametrize("name,fn", methods)
 @pytest.mark.parametrize("nums,expected", test_cases)
-def test_solution(name, fn, nums, expected):
+def test_solutions(name, fn, nums, expected):
     result = fn(nums)
     assert normalize(result) == normalize(expected), f"{name} failed for input {nums}"

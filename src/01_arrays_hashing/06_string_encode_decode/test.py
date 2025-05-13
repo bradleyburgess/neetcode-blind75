@@ -22,7 +22,7 @@ methods = [("json", Solution.Json), ("length_delimited", Solution.LengthDelimite
 
 @pytest.mark.parametrize("name,sln", methods)
 @pytest.mark.parametrize("strs", test_cases)
-def test_solution(name, sln, strs):
+def test_solutions(name, sln, strs):
     encoded = sln.encode(strs)
     decoded = sln.decode(encoded)
     assert decoded == strs, f"{name} failed for input {strs}"
