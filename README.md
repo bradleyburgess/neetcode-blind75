@@ -76,3 +76,5 @@ suggestions welcome!
   - [Best Time to Buy and Sell Stock](./src/03_sliding_window/12_best_time_to_buy_and_sell_stock/)
   - [Longest Substring Without Repeating
     Characters](./src/03_sliding_window/13_longest_substring_without_repeating_characters/)
+  - [Longest Repeating Character
+    Replacement](./src/03_sliding_window/14_longest_repeating_character_replacement/)
