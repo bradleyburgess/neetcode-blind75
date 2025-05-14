@@ -25,6 +25,7 @@ test_cases = [
 methods = [
     ("deque_window", Solution.longest_substring_deque_window),
     ("hash_window", Solution.longest_substring_hash_window),
+    ("set_window", Solution.longest_substring_set_window),
 ]
 
 

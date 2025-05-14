@@ -55,6 +55,22 @@ and update the `max_length` if needed. Return the `max_length`.
 - Time: `O(n)` (true)
 - Space: `O(n')` (unique characters in the string)
 
+### 3. Sliding Window: Set-based
+
+After completing my first two solutions, I watched NeetCode's video on this
+problem. He uses a set-based approach, which I think is also quite elegant. It's
+quite similar in the broad strokes — sliding window — but it's actually a little
+less code.
+
+**Approach:**  
+Create a set of the current string. Loop over the string. If the current
+character is in the set, remove the `left` pointer's character and increment
+`left` until the `left` pointer's character is no longer in the set. 
+
+**Complexity:**  
+- Time: `O(n)` (true)
+- Space: `O(n')` (unique characters in the string)
+
 ---
 
 ## 🧪 Tests (edge cases)
