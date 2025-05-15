@@ -73,9 +73,12 @@ suggestions welcome!
   - [Valid Palindrome](./src/02_two_pointers/08_longest_consecutive_sequence/)
   - [Three Sum](./src/02_two_pointers/10_three_sum/)
   - [Container With Most Water](./src/02_two_pointers/11_container_with_most_water/)
+- [03. Sliding Window](./src/03_sliding_window/)
   - [Best Time to Buy and Sell Stock](./src/03_sliding_window/12_best_time_to_buy_and_sell_stock/)
   - [Longest Substring Without Repeating
     Characters](./src/03_sliding_window/13_longest_substring_without_repeating_characters/)
   - [Longest Repeating Character
     Replacement](./src/03_sliding_window/14_longest_repeating_character_replacement/)
   - [Minimum Window Substring](./src/03_sliding_window/15_minimum_window_substring/)
+- [04. Stack](./src/04_stack/)
+  - [Valid Parentheses](./src/04_stack/16_valid_parentheses/)
