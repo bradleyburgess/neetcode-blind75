@@ -7,7 +7,7 @@ class ListNode:
         self.next = next
 
     def __str__(self):
-        return f"Node: {self.val}"
+        return f"Node: {self.val} -> {self.next}" if self.next else f"Node: {self.val}"
 
 
 class Solution:
@@ -45,9 +45,9 @@ class Solution:
         new_head = s.pop()
         node = new_head
         while s:
-            next = s.pop()
-            node.next = next
-            node = next
+            _next = s.pop()
+            node.next = _next
+            node = _next
 
         node.next = None
 

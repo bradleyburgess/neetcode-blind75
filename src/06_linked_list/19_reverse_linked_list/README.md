@@ -1,85 +1,91 @@
-# 🧠 Problem: Search in Rotated Sorted Array
+# 🧠 Problem: Reverse Linked List
 
-> You are given an array of length `n` which was originally sorted in ascending
-> order. It has now been rotated between `1` and `n` times. For example, the
-> array `nums = [1,2,3,4,5,6]` might become:
-> 
-> - `[3,4,5,6,1,2]` if it was rotated 4 times.
-> - `[1,2,3,4,5,6]` if it was rotated 6 times.
-> 
-> Given the rotated sorted array `nums` and an integer `target`, return the
-> index of `target` within `nums`, or `-1` if it is not present.
-> 
-> You may assume all elements in the sorted rotated array nums are **unique**,
-> 
-> A solution that runs in `O(n)` time is trivial, can you write an algorithm
-> that runs in `O(log n)` time?
+> Given the beginning of a singly linked list `head`, reverse the list, and
+> return the new beginning of the list.
 
-[View on NeetCode](https://neetcode.io/problems/find-target-in-rotated-sorted-array)  
-[View on LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+[View on NeetCode](https://neetcode.io/problems/reverse-a-linked-list/)  
+[View on LeetCode](https://leetcode.com/problems/reverse-linked-list/)
 
 ---
 
 ## ✨ Initial Thoughts
 
-Clearly this is going to be similar in many ways to the [previous
-problem](../17_find_minimum_in_rotated_array/). The key is going to be in
-determining the logic of whether to go `right` or `left` from the `mid` — that
-will be different to the **Find Minimum** problem.
+This is the first of the Linked List problems. I can see two broad ways to
+tackle reversing a linked list:
+
+1. Traverse the list to the end, adding each node to a stack, and then pop nodes
+   off the stack, reversing the `next` relationships.
+2. Iteratively reverse the `next` relationships by stepping through the list,
+   using a `temp` node as a buffer.
 
 ---
 
 ## 🚀 Solutions
 
-### 1. Binary Search with Tweaked Logic
+### 1. Brute Force
 
 **Approach:**  
-We'll take a similar approach to the [Binary Search
-approach](../17_find_minimum_in_rotated_array/README.md#2-true-binary-search) of
-the previous problem, however, with some adjusted logic. First we'll determine
-if the "break" is to the left or right of us: if the `left` pointer is less than
-`mid`, then it's to the right; otherwise it's to the left. If we're in the left
-portion (ie before the break), we'll go left if the `target` is between `left`
-and `mid`, otherwise we'll go right. If we're in the right portion (ie after the
-break), we'll go left if `target` is either about `left` or below `mid`;
-otherwise we'll go right. At every point we'll check if `mid` matches `target`.
-If we get to the end of the loop and we've not returned a value, we'll return
-`-1`, indicating that `target` was not found.
+Add the **value** of each `node` to a stack. Pop off the stack, creating new
+`node`s with the values from the stack.
 
 **Complexity:**  
-- Time: `O(log n)`
+- Time: `O(n)` (in practice, `2n`)
+- Space: `O(n)`
+
+**Trade-offs:**  
+- Very simple
+- Not a huge performance hit, but you are having to handle each node twice: once
+  traversing to the end of the list, and secondly making your way back,
+  reversing the relationships
+
+### 2. Brute Force: Optimized
+
+**Approach:**  
+Very similar to above. But instead of creating new `node`s from the values, just
+reverse the relationships on the stack.
+
+**Complexity:**  
+- Time: `O(n)` (in practice, `2n`)
+- Space: `O(n)`
+
+**Trade-offs:**  
+- Also very simple
+- Less memory, as we're not creating new `node`s
+  
+  ### 3. Iterative
+
+  **Approach:**  
+Go through the list once, iteratively rewiring the `next` relationships, using a
+`temp` node to fascilitate the joining.
+
+**Complexity:**  
+- Time: `O(n)` (actually)
 - Space: `O(1)`
 
 **Trade-offs:**  
-- Elegant
-- Very simple "binary" logic — it's either to the right or to the left (or we're
-  on it!)
+- A little more work logically
+- Uses no extra memory
 
 ---
 
 ## 🧪 Tests (edge cases)
 
-- One value in the array
-- No rotation / fully rotated
-- Target not in the array
-- Target before the break
-- Target after the break
-- Target at the very beginning or the very end
+- Empty list
+- One item in the list
 
 ---
 
 ## 📌 Reflections & Takeaways
 
-**Binary Search** once again shows its power under the right cirsumstances;
-namely a sorted array, with or without a rotation.
+**Linked Lists** are great for linear, 1D relationships. This problem is not
+majorly complex, but it can be a little "finicky", as you're having to really
+think through the nodes and the `next` relationships, especially in the
+iterative approach.
 
-This problem can seem complex at first, but once you nail down the 2-part logic,
-it then appears quite simple.
-
-1. Determine if `mid` is in the "left" (before the break) or "right" (after the
-   break) portion.
-2. Decide whether to go right or left, based on the answer to (1.) and how the
-   value of `target` relates to `nums[left]` and `nums[mid]`.
+I also got caught out in the optimized brute force solution, as I initially
+forgot to set the last node (the original `head` node) `next` to `None`, which
+resulted in an infinite loop between the original `head` node and the original
+second node, each pointing to eachother.
 
 ---
 
