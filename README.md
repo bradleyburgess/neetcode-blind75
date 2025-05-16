@@ -20,13 +20,15 @@ blog](https://dev.bradley-burgess.com/tags/neetcode/).
 Structure is:
 ```
 ./src/
-    01_arrays_hashing/
-        01_contains_duplicate/
-            contains_duplicate.py
-            contains_duplicate_test.py
-            README.md
-        02_valid_anagram/
-        ...
+|-- 01_arrays_hashing/
+    |-- 01_contains_duplicate/
+        |-- solution.py
+        |-- test.py
+        |-- README.md
+    |-- 02_valid_anagram/
+        |-- ...
+|-- 02_two_pointers/
+    |-- ...
 ```
 
 ## Goals
