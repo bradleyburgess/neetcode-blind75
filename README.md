@@ -85,3 +85,5 @@ suggestions welcome!
 - [05. Binary Search](./src/05_binary_search/)
   - [Find Minimum in Rotated Sorted Array](./src/05_binary_search/17_find_minimum_in_rotated_array/)
   - [Search in Rotated Sorted Array](./src/05_binary_search/18_search_in_rotated_sorted_array/)
+- [06. Linked List](./src/06_linked_list/)
+  - [Reverse Linked List](./src/06_linked_list/19_reverse_linked_list/)
