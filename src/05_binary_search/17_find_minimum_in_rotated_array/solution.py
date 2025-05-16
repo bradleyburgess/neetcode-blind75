@@ -44,7 +44,8 @@ class Solution:
 
     @staticmethod
     def find_min_binary_search(nums: List[int]) -> int:
-        if not nums: raise ValueError
+        if not nums:
+            raise ValueError
 
         left, right = 0, len(nums) - 1
         result = nums[left]
@@ -58,5 +59,5 @@ class Solution:
             else:
                 result = min(result, nums[mid])
                 right = mid - 1
-        
+
         return result

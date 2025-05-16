@@ -8,7 +8,8 @@ class Solution:
 
         while left <= right:
             mid = (right + left) // 2
-            if nums[mid] == target: return mid
+            if nums[mid] == target:
+                return mid
 
             if nums[left] <= nums[mid]:
                 if nums[left] <= target < nums[mid]:
@@ -20,5 +21,5 @@ class Solution:
                     right = mid - 1
                 else:
                     left = mid + 1
-        
+
         return -1

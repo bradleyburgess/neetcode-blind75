@@ -53,7 +53,7 @@ class Solution:
             if len(result) == 0 or len(_result) < len(result):
                 result = _result
         return result
-    
+
     @staticmethod
     def minimum_window_have_need(s: str, t: str) -> str:
         result = ""
@@ -68,7 +68,7 @@ class Solution:
             if current in t_chars and s_chars[current] <= t_chars[current]:
                 have += 1
             while have == need:
-                _result = s[left:right + 1]
+                _result = s[left : right + 1]
                 print(f"Found a result: {_result}")
                 if len(result) == 0 or len(_result) < len(result):
                     result = _result
@@ -76,5 +76,5 @@ class Solution:
                 if s[left] in t_chars and t_chars[s[left]] > s_chars[s[left]]:
                     have -= 1
                 left += 1
-            
+
         return result

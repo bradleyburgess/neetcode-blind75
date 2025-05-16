@@ -56,5 +56,5 @@ class Solution:
             elif c in bracket_map:
                 if not stack or stack.pop() != bracket_map[c]:
                     return False
-        
+
         return not stack
