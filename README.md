@@ -87,3 +87,4 @@ suggestions welcome!
   - [Search in Rotated Sorted Array](./src/05_binary_search/18_search_in_rotated_sorted_array/)
 - [06. Linked List](./src/06_linked_list/)
   - [Reverse Linked List](./src/06_linked_list/19_reverse_linked_list/)
+  - [Merge Two Sorted Linked Lists](./src/06_linked_list/20_merge_two_sorted_linked_lists/)
