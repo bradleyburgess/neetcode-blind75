@@ -93,3 +93,4 @@ suggestions welcome!
   - [Merge Two Sorted Linked Lists](./src/06_linked_list/20_merge_two_sorted_linked_lists/)
   - [Linked List Cycle Detection](./src/06_linked_list/21_linked_list_cycle_detection/)
   - [Reorder Linked List](./src/06_linked_list/22_reorder_linked_list/)
+  - [Remove Nth Node From End of List](./src/06_linked_list/23_remove_nth_node_from_end_of_list/)
