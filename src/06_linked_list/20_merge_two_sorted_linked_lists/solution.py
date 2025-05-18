@@ -12,7 +12,7 @@ class ListNode:
 
 class Solution:
     @staticmethod
-    def merge_sorted_linked_lists(
+    def merge_sorted_lists_two_pointer(
         list1: Optional[ListNode], list2: Optional[ListNode]
     ) -> ListNode:
         if not list1:

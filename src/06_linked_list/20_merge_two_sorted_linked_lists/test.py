@@ -28,10 +28,15 @@ test_cases = [
     (([5], [1, 2, 3]), [1, 2, 3, 5]),
 ]
 
+methods = [
+    ("two_pointer", Solution.merge_sorted_lists_two_pointer),
+]
 
+
+@pytest.mark.parametrize("name,fn", methods)
 @pytest.mark.parametrize("inputs,expected", test_cases)
-def test_solution(inputs, expected):
+def test_solution(name, fn, inputs, expected):
     l1 = build_linked_list(inputs[0])
     l2 = build_linked_list(inputs[1])
-    result = Solution.merge_sorted_linked_lists(l1, l2)
-    assert to_list(result) == expected
+    result = fn(l1, l2)
+    assert to_list(result) == expected, f"{name} failed for inputs {inputs}"
