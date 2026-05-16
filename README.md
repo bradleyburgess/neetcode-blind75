@@ -52,5 +52,5 @@ up to the Python solutions, I will go back to Python.
 
 After I finish both, I might do C++ as well.
 
-- [python](./python/src/)
+- [python](./python/)
 - [java](./java/)
