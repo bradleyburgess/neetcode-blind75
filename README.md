@@ -1,13 +1,8 @@
 # NeetCode Blind 75 Solutions
 
 This repository contains my solutions to the [NeetCode Blind
-75](https://neetcode.io/practice) problems. I'm solving them in Python[^1] and
+75](https://neetcode.io/practice) problems. I'm solving them in Python and Java,
 documenting my thought process as I go.
-
-Each problem is organized by topic and includes:
-- Multiple solution strategies (e.g. brute force, optimized)
-- Unit tests
-- Writeups for thoughts / takeaways
 
 I'm also publishing selected writeups on my [dev
 blog](https://bradley-burgess.com/blog/t/neetcode/1).
@@ -16,16 +11,27 @@ blog](https://bradley-burgess.com/blog/t/neetcode/1).
 
 Structure is:
 ```
-./src/
-|-- 01_arrays_hashing/
+./python     # Python solutions
+|-- src/
     |-- 01_contains_duplicate/
         |-- solution.py
         |-- test.py
-        |-- README.md
     |-- 02_valid_anagram/
         |-- ...
-|-- 02_two_pointers/
-    |-- ...
+./java           # Java root
+|-- src/
+    |-- main/    # Java solutions
+        |-- java/
+            |-- arrays_hashing/
+                |-- ContainsDuplicate.java
+                |-- ValidAnagram.java
+                |-- ...
+    |-- test/    # Java tests
+        |-- java/
+            |-- arrays_hashing/
+                |-- ContainsDuplicateTest.java
+                |-- ValidAnagramTest.java
+./docs    # Writeups and notes
 ```
 
 ## Goals
@@ -33,15 +39,18 @@ Structure is:
 - Practice data structures and algorithms in a structured, consistent way
 - Build clear, tested, and well-documented solutions
 - Explore trade-offs in different approaches
+- Fill in gaps in my knowledge and identify areas for improvement
+- Explore multiple paradigms
+- Have fun
 
 ## Languages
 
-The solution are only in Python right now, but I might do them in a second,
-lower-level language at some point.
+I began this project in Python and completed about 25 of the 75 solutions. I
+abandoned the project for a full year, and have recently come back to it. I
+decided to restart from problem one, but this time with Java. Once i"ve caught
+up to the Python solutions, I will go back to Python.
 
-- [python](./src/)
+After I finish both, I might do C++ as well.
 
- ---
-
- [^1]: I'm initially doing just Python, but I will likely add a second and even
-       third language at some point.
+- [python](./python/src/)
+- [java](./java/)
