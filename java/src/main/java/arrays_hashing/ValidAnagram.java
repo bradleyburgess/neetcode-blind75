@@ -4,6 +4,8 @@ import java.util.HashMap;
 
 public class ValidAnagram {
     public boolean solveHashmap(String input1, String input2) {
+        input1 = input1.toLowerCase().replaceAll("[^a-zA-Z0-9]", "");
+        input2 = input2.toLowerCase().replaceAll("[^a-zA-Z0-9]", "");
         if (input1.length() != input2.length()) return false;
         var hash1 = new HashMap<Character, Integer>();
         var hash2 = new HashMap<Character, Integer>();
@@ -21,6 +23,8 @@ public class ValidAnagram {
     }
 
     public boolean solveHashmapOptimized(String input1, String input2) {
+        input1 = input1.toLowerCase().replaceAll("[^a-zA-Z0-9]", "");
+        input2 = input2.toLowerCase().replaceAll("[^a-zA-Z0-9]", "");
         if (input1.length() != input2.length()) return false;
         var hash = new HashMap<Character, Integer>();
         for (int i = 0; i < input1.length(); i++) {
@@ -35,4 +39,8 @@ public class ValidAnagram {
         }
         return true;
     }
+
+//    public boolean solveSorted(String input1, String input2) {
+//
+//    }
 }
