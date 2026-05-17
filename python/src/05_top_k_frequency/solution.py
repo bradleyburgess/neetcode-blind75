@@ -4,6 +4,7 @@ from typing import List
 
 
 class Solution:
+    @staticmethod
     def top_k_frequency_hashmap(nums: List[int], k: int) -> List[int]:
         freq_hashmap = Counter(nums)
         freq_list = list()
@@ -14,6 +15,7 @@ class Solution:
             for x in sorted(freq_list, key=lambda i: i["freq"], reverse=True)[:k]
         ]
 
+    @staticmethod
     def top_k_frequency_heapq(nums: List[int], k: int) -> List[int]:
         freq_hashmap = Counter(nums)
         heap = []
@@ -24,6 +26,7 @@ class Solution:
         top_k = [heappop(heap)[1] for _ in range(len(heap))]
         return top_k[::-1]
 
+    @staticmethod
     def top_k_frequency_buckets(nums: List[int], k: int) -> List[int]:
         freq_hashmap = Counter(nums)
         freq_buckets = [[] for _ in range(len(nums) + 1)]
