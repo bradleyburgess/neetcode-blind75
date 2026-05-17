@@ -1,18 +1,9 @@
 import pytest
 from .solution import Solution
+from ..helpers import load_test_cases
 
 test_cases = [
-    (("racecar", "carrace"), True),
-    (("jar", "jam"), False),
-    (("", ""), True),
-    (("a", "a"), True),
-    (("a", "b"), False),
-    (("anagram", "nagaram"), True),
-    (("rat", "car"), False),
-    (("aabbcc", "abcabc"), True),
-    (("abc", "abcd"), False),
-    (("Are you alright?", "authorial grey"), True),
-    (("lamp", "lamps"), False),
+    (tuple(tc["input"]), tc["expected"]) for tc in load_test_cases("02_valid_anagram")
 ]
 
 methods = [

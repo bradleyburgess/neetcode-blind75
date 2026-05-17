@@ -1,5 +1,7 @@
 import pytest
+
 from .solution import Solution
+from ..helpers import load_test_cases
 
 
 # Helper to normalize output (sort groups and contents)
@@ -8,19 +10,7 @@ def normalize(result):
 
 
 test_cases = [
-    (
-        ["eat", "tea", "tan", "ate", "nat", "bat"],
-        [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]],
-    ),
-    (
-        ["abc", "cab", "bca", "acb", "cba", "bac"],
-        [["abc", "acb", "bac", "bca", "cab", "cba"]],
-    ),
-    (["one", "two", "three"], [["one"], ["three"], ["two"]]),
-    ([""], [[""]]),
-    ([], []),
-    (["a"], [["a"]]),
-    (["", "", "a", "a", "b"], [["", ""], ["a", "a"], ["b"]]),
+    (tc["input"], tc["expected"]) for tc in load_test_cases("04_group_anagrams")
 ]
 
 methods = [

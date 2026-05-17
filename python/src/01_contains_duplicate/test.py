@@ -1,15 +1,10 @@
 import pytest
 from .solution import Solution
-
+from ..helpers import load_test_cases
 
 test_cases = [
-    (([1, 2, 3, 1],), True),
-    (([1, 2, 3],), False),
-    (([],), False),
-    (([1],), False),
-    (([1, 1],), True),
+    ((tc["input"],), tc["expected"]) for tc in load_test_cases("01_contains_duplicate")
 ]
-
 
 # List of implementations to test
 methods = [
