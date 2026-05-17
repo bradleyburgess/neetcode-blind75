@@ -18,6 +18,7 @@ class Solution:
                 complement_index = hash[complement]
                 if index != complement_index:
                     return [index, hash[complement]]
+        return []
 
     @staticmethod
     def two_sum_hashmap_one_pass(nums: list[int], target: int) -> list[int]:
