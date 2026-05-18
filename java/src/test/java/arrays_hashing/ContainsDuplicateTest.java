@@ -24,14 +24,10 @@ public class ContainsDuplicateTest
     }
 
     @Override
-    protected TestCase<int[], Boolean> buildTestCaseFromNode(JsonNode node) {
-        try {
-            return new TestCase<>(
-                objectMapper.treeToValue(node.get("input"), int[].class),
-                node.get("expected").asBoolean()
-            );
-        } catch (JsonProcessingException e) {
-            throw new RuntimeException(e);
-        }
+    protected TestCase<int[], Boolean> buildTestCaseFromNode(JsonNode input, JsonNode expected) throws JsonProcessingException {
+        return new TestCase<>(
+            objectMapper.treeToValue(input, int[].class),
+            expected.asBoolean()
+        );
     }
 }

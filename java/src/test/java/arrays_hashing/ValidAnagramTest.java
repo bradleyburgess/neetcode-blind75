@@ -22,15 +22,10 @@ public class ValidAnagramTest extends BaseSolutionTest<ValidAnagram, String[], B
     }
 
     @Override
-    protected TestCase<String[], Boolean> buildTestCaseFromNode(JsonNode node) {
-        try {
-            return new TestCase<>(
-                objectMapper.treeToValue(node.get("input"), String[].class),
-                node.get("expected").asBoolean()
-            );
-        } catch (JsonProcessingException e) {
-            throw new RuntimeException(e);
-        }
-
+    protected TestCase<String[], Boolean> buildTestCaseFromNode(JsonNode input, JsonNode expected) throws JsonProcessingException {
+        return new TestCase<>(
+            objectMapper.treeToValue(input, String[].class),
+            expected.asBoolean()
+        );
     }
 }
